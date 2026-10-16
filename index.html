@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Artificial Intelligence | AI EduHub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f6ff',
+                            100: '#e0edff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-lg shadow-blue-500/30">
+                    <i class="fa-solid fa-brain text-xl"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">AI EduHub</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#welcome" class="hover:text-blue-400 transition-colors">Welcome</a>
+                <a href="#modules" class="hover:text-blue-400 transition-colors">Core Modules</a>
+                <a href="#quiz" class="hover:text-blue-400 transition-colors">Knowledge Assessment</a>
+            </nav>
+            <a href="#quiz" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-md hover:shadow-blue-500/25">
+                Take Quiz <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- Hero / Welcome Section -->
+        <section id="welcome" class="relative overflow-hidden rounded-3xl glass-card p-8 md:p-12 border border-slate-800">
+            <div class="absolute -right-20 -top-20 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="relative z-10 max-w-3xl space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-sparkles"></i> Interactive Student Module
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    Welcome to <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">Introduction to Artificial Intelligence</span>
+                </h1>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+                    Hello Future Innovator! Welcome to your gateway into modern technology. Explore fundamental concepts, discover machine learning principles, and test your knowledge with our interactive quiz below.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#modules" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30">
+                        Start Exploring
+                    </a>
+                    <a href="#quiz" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-sm transition-all">
+                        Jump to Quiz
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Cards Section -->
+        <section id="modules" class="space-y-8">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Core Information Modules</h2>
+                <p class="text-slate-400 text-sm md:text-base">Master the essential building blocks of artificial intelligence</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1: What is AI? -->
+                <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-blue-500/50 transition-all hover:-translate-y-1 duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">What is AI?</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Artificial Intelligence (AI) refers to computer systems designed to simulate human intelligence. These systems perform tasks such as visual perception, decision-making, language translation, and problem-solving.
+                    </p>
+                </div>
+
+                <!-- Card 2: What is Machine Learning? -->
+                <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-indigo-500/50 transition-all hover:-translate-y-1 duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">What is Machine Learning?</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Machine Learning (ML) is a subfield of AI focused on building algorithms that learn from patterns in data. Instead of being explicitly programmed, ML models improve their accuracy over time through experience.
+                    </p>
+                </div>
+
+                <!-- Card 3: Where is AI used? -->
+                <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-purple-500/50 transition-all hover:-translate-y-1 duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Where is AI Used?</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        AI powers everyday technologies like voice assistants (Siri, Alexa), recommendation algorithms (Netflix, Spotify), autonomous vehicles, medical diagnostic tools, and smart web search platforms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="glass-card rounded-3xl p-6 md:p-10 border border-slate-800 space-y-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">Knowledge Check</h2>
+                    <p class="text-slate-400 text-sm mt-1">Answer all 3 multiple-choice questions to test your understanding.</p>
+                </div>
+                <div id="quiz-progress-badge" class="self-start md:self-auto px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold">
+                    Progress: <span id="answered-count" class="text-blue-400">0</span> / 3 Answered
+                </div>
+            </div>
+
+            <form id="quiz-form" class="space-y-8">
+                <!-- Question 1 -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-white flex items-start gap-3">
+                        <span class="w-7 h-7 rounded-lg bg-blue-600/20 text-blue-400 border border-blue-500/30 flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+                        What is the primary goal of Artificial Intelligence?
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-10">
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q1" value="A" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">To replace all human jobs immediately</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">To create machines that simulate human intelligence</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">To increase internet browser speeds</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">To manually store user passwords</span>
+                        </label>
+                    </div>
+                    <div id="q1-feedback" class="hidden pl-10 text-sm mt-2"></div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-white flex items-start gap-3">
+                        <span class="w-7 h-7 rounded-lg bg-blue-600/20 text-blue-400 border border-blue-500/30 flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+                        How does Machine Learning differ from traditional computer programming?
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-10">
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q2" value="A" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">It requires physical robots to execute code</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">It learns patterns from data rather than relying solely on explicit rules</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">It cannot function without an internet connection</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">It produces identical results for all inputs</span>
+                        </label>
+                    </div>
+                    <div id="q2-feedback" class="hidden pl-10 text-sm mt-2"></div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-white flex items-start gap-3">
+                        <span class="w-7 h-7 rounded-lg bg-blue-600/20 text-blue-400 border border-blue-500/30 flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
+                        Which of the following is a real-world application of AI?
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-10">
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q3" value="A" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">Streaming video content over Wi-Fi</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q3" value="B" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">Voice assistants like Siri and recommendation systems</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q3" value="C" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">Charging a computer battery</span>
+                        </label>
+                        <label class="option-card flex items-center gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all">
+                            <input type="radio" name="q3" value="D" class="w-4 h-4 text-blue-600 bg-slate-950 border-slate-700 focus:ring-blue-500">
+                            <span class="text-sm text-slate-300">Printing documents on paper</span>
+                        </label>
+                    </div>
+                    <div id="q3-feedback" class="hidden pl-10 text-sm mt-2"></div>
+                </div>
+
+                <!-- Submit / Control Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-slate-800">
+                    <button type="button" id="submit-btn" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30">
+                        Submit Answers
+                    </button>
+                    <button type="button" id="reset-btn" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 font-semibold text-sm transition-all">
+                        Try Again
+                    </button>
+                </div>
+            </form>
+
+            <!-- Results Panel -->
+            <div id="result-box" class="hidden p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3">
+                <h4 class="text-lg font-bold text-white">Quiz Results</h4>
+                <p id="score-text" class="text-3xl font-extrabold text-blue-400"></p>
+                <p id="feedback-message" class="text-slate-300 text-sm"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950/80 py-6 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 AI EduHub — Introduction to Artificial Intelligence.</p>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        const answers = { q1: 'B', q2: 'B', q3: 'B' };
+        const form = document.getElementById('quiz-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const resultBox = document.getElementById('result-box');
+        const scoreText = document.getElementById('score-text');
+        const feedbackMsg = document.getElementById('feedback-message');
+        const answeredCountEl = document.getElementById('answered-count');
+
+        // Update progress counter on input change
+        form.addEventListener('change', () => {
+            const formData = new FormData(form);
+            let answered = 0;
+            if (formData.get('q1')) answered++;
+            if (formData.get('q2')) answered++;
+            if (formData.get('q3')) answered++;
+            answeredCountEl.textContent = answered;
+        });
+
+        submitBtn.addEventListener('click', () => {
+            const formData = new FormData(form);
+            const userQ1 = formData.get('q1');
+            const userQ2 = formData.get('q2');
+            const userQ3 = formData.get('q3');
+
+            if (!userQ1 || !userQ2 || !userQ3) {
+                alert('Please answer all 3 questions before submitting!');
+                return;
+            }
+
+            let score = 0;
+
+            // Check Question 1
+            const q1Feedback = document.getElementById('q1-feedback');
+            q1Feedback.classList.remove('hidden');
+            if (userQ1 === answers.q1) {
+                score++;
+                q1Feedback.className = 'pl-10 text-sm mt-2 text-emerald-400 font-medium';
+                q1Feedback.textContent = '✓ Correct! AI aims to simulate human intelligence.';
+            } else {
+                q1Feedback.className = 'pl-10 text-sm mt-2 text-rose-400 font-medium';
+                q1Feedback.textContent = '✗ Incorrect. The correct answer is B (simulating human intelligence).';
+            }
+
+            // Check Question 2
+            const q2Feedback = document.getElementById('q2-feedback');
+            q2Feedback.classList.remove('hidden');
+            if (userQ2 === answers.q2) {
+                score++;
+                q2Feedback.className = 'pl-10 text-sm mt-2 text-emerald-400 font-medium';
+                q2Feedback.textContent = '✓ Correct! Machine learning algorithm learns from data patterns.';
+            } else {
+                q2Feedback.className = 'pl-10 text-sm mt-2 text-rose-400 font-medium';
+                q2Feedback.textContent = '✗ Incorrect. The correct answer is B (learning patterns from data).';
+            }
+
+            // Check Question 3
+            const q3Feedback = document.getElementById('q3-feedback');
+            q3Feedback.classList.remove('hidden');
+            if (userQ3 === answers.q3) {
+                score++;
+                q3Feedback.className = 'pl-10 text-sm mt-2 text-emerald-400 font-medium';
+                q3Feedback.textContent = '✓ Correct! Voice assistants and recommendation systems use AI.';
+            } else {
+                q3Feedback.className = 'pl-10 text-sm mt-2 text-rose-400 font-medium';
+                q3Feedback.textContent = '✗ Incorrect. The correct answer is B (Voice assistants & recommendations).';
+            }
+
+            // Display Score
+            resultBox.classList.remove('hidden');
+            scoreText.textContent = `${score} / 3`;
+
+            if (score === 3) {
+                feedbackMsg.textContent = '🎉 Perfect score! Excellent understanding of AI fundamentals.';
+            } else if (score === 2) {
+                feedbackMsg.textContent = '👍 Good job! Review the concepts above to get a perfect score.';
+            } else {
+                feedbackMsg.textContent = '📚 Keep learning! Re-read the information cards above and try again.';
+            }
+        });
+
+        resetBtn.addEventListener('click', () => {
+            form.reset();
+            answeredCountEl.textContent = '0';
+            resultBox.classList.add('hidden');
+            ['q1-feedback', 'q2-feedback', 'q3-feedback'].forEach(id => {
+                const el = document.getElementById(id);
+                el.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
